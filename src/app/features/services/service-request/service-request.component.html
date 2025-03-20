@@ -1,0 +1,22 @@
+<div class="service-request-container">
+  <header class="header">
+    <h1>Hola, [Nombre]</h1>
+    <p>Tienes servicios pendientes</p>
+    <div class="contact-info">
+      Contacta GoCast: +00-000-0000000
+    </div>
+  </header>
+
+  <div class="services-list">
+    <div *ngFor="let service of pendingServices" 
+         class="service-card"
+         (click)="onServiceClick(service.id)">
+      <h2>Nuevo servicio</h2>
+      <div class="service-image">
+        <img src="assets/images/tow-truck.png" alt="Servicio de Grúa">
+      </div>
+      <h3>{{ service.serviceType }}</h3>
+      <button class="view-service-btn">Ver servicio</button>
+    </div>
+  </div>
+</div>

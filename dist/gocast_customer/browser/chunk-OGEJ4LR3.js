@@ -1,0 +1,1 @@
+import"./chunk-2NFLSA4Y.js";var e=[{path:"",redirectTo:"welcome",pathMatch:"full"},{path:"welcome",loadComponent:()=>import("./chunk-SERATXU4.js").then(o=>o.WelcomeComponent)}];export{e as DASHBOARD_ROUTES};

@@ -1,0 +1,50 @@
+<div class="page-container">
+  <header class="header">
+    <div class="header-content">
+      <img src="assets/images/logob.png" alt="GoCast Logo" class="logo">
+    </div>
+  </header>
+
+  <div class="main-content">
+    <div class="service-request-container">
+      <div class="contact-client">
+        Contacta a tu cliente: +00-000-0000000
+      </div>
+
+      <div class="service-card">
+        <img src="assets/images/srv2.png" alt="Servicio de Grúa">
+        <h3>Servicio de Grúa</h3>
+      </div>
+
+      <button class="btn-gps">Ver ubicación GPS</button>
+
+      <div class="form-group">
+        <label>Nombre</label>
+        <div class="field-value">{{ serviceRequest.clientName }}</div>
+      </div>
+
+      <div class="form-group">
+        <label>Vehículo</label>
+        <div class="field-value">{{ serviceRequest.vehicle }}</div>
+      </div>
+
+      <div class="form-group">
+        <label>Placa</label>
+        <div class="field-value">{{ serviceRequest.plate }}</div>
+      </div>
+
+      <div class="form-group">
+        <label>Ubicación del vehículo a auxiliar</label>
+        <div class="field-value">{{ serviceRequest.location }}</div>
+      </div>
+
+      <div class="form-group">
+        <label>Mensaje adicional (max. 500 letras)</label>
+        <div class="field-value">{{ serviceRequest.additionalMessage }}</div>
+      </div>
+
+      <button class="btn-accept" (click)="onAcceptService()">Aceptar servicio</button>
+      <button class="btn-reject" (click)="onRejectService()">Rechazar servicio</button>
+    </div>
+  </div>
+</div>

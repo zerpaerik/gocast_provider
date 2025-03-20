@@ -1,0 +1,317 @@
+.page-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #3F51B5;
+}
+
+.header {
+  background-color: white;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  .header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    .logo {
+      height: 32px;
+      width: auto;
+    }
+  }
+}
+
+.main-content {
+  flex: 1;
+  padding: 1rem;
+}
+
+.top-section {
+  max-width: 1200px;
+  margin: 0 auto 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  color: white;
+
+  .welcome-text {
+    h1 {
+      font-size: 24px;
+      margin: 0;
+    }
+  }
+
+  .contact-button {
+    background-color: #5C6BC0;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+}
+
+.service-request-container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 1rem;
+  color: white;
+
+  .contact-client {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+    padding: 0.75rem;
+    border-radius: 4px;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .service-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+
+    img {
+      width: 200px;
+      height: auto;
+      margin-bottom: 0.5rem;
+    }
+
+    h3 {
+      color: #000;
+      margin: 0;
+      font-weight: normal;
+    }
+  }
+
+  .btn-gps {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #6C7AE0;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #5C6BC0;
+    }
+  }
+
+  .form-group {
+    margin-bottom: 1rem;
+
+    label {
+      display: block;
+      color: rgba(255, 255, 255, 0.7);
+      margin-bottom: 0.5rem;
+      font-size: 0.9rem;
+    }
+
+    .field-value {
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 0.75rem;
+      border-radius: 4px;
+      color: white;
+      min-height: 20px;
+    }
+  }
+
+  .btn-accept, .btn-reject {
+    width: 100%;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 0.75rem;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+
+  .btn-accept {
+    background-color: #6C7AE0;
+    color: white;
+
+    &:hover {
+      background-color: #5C6BC0;
+    }
+  }
+
+  .btn-reject {
+    background-color: #FF4081;
+    color: white;
+
+    &:hover {
+      background-color: #F50057;
+    }
+  }
+}
+
+.service-detail-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 24px;
+  max-width: 800px;
+  margin: 0 auto;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  .service-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+
+    .service-type {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+
+      .service-icon {
+        width: 50px;
+        height: 50px;
+        object-fit: contain;
+      }
+
+      h2 {
+        color: #333;
+        margin: 0;
+        font-size: 20px;
+      }
+    }
+
+    .service-status {
+      background-color: #FFA000;
+      color: white;
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-weight: 500;
+
+      &.accepted {
+        background-color: #4CAF50;
+      }
+    }
+  }
+
+  .service-info {
+    .info-section {
+      margin-bottom: 30px;
+
+      h3 {
+        color: #3F51B5;
+        margin-bottom: 20px;
+        font-size: 18px;
+      }
+
+      .info-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+
+        .info-item {
+          label {
+            color: #666;
+            font-size: 14px;
+            display: block;
+            margin-bottom: 5px;
+          }
+
+          p {
+            color: #333;
+            margin: 0;
+            font-size: 16px;
+          }
+        }
+      }
+
+      .description {
+        color: #333;
+        line-height: 1.5;
+        margin: 0;
+      }
+    }
+  }
+
+  .action-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+
+    button {
+      padding: 12px 30px;
+      border-radius: 25px;
+      border: none;
+      font-size: 16px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: transform 0.2s, background-color 0.2s;
+
+      &:hover {
+        transform: translateY(-2px);
+      }
+    }
+
+    .accept-btn {
+      background-color: #4CAF50;
+      color: white;
+
+      &:hover {
+        background-color: #388E3C;
+      }
+    }
+
+    .reject-btn {
+      background-color: #F44336;
+      color: white;
+
+      &:hover {
+        background-color: #D32F2F;
+      }
+    }
+
+    .complete-btn {
+      background-color: #3F51B5;
+      color: white;
+
+      &:hover {
+        background-color: #303F9F;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .top-section {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .service-header {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+
+    .service-type {
+      flex-direction: column;
+    }
+  }
+
+  .action-buttons {
+    flex-direction: column;
+    padding: 0 20px;
+
+    button {
+      width: 100%;
+    }
+  }
+}
